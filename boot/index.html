@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container text-center py-5">
+        <div class="row">
+            <div class="col-md-4">
+
+                <h1 class="text-center text-danger">Employee data</h1>
+                <div class="form-group">
+                    <input class="form-control text-center" id="name" type="name" placeholder="enter your name">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control  text-center" id="age" type="name" placeholder="enter your age">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control  text-center" id="salary" type="name" placeholder="enter your salary">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control  text-center" id="mobile" type="name" placeholder="enter your mobile">
+                </div>
+
+                <button disabled id="addBtn" class="btn btn-info">Add Employee</button>
+                <button id="reset" class="btn btn-danger">reset</button>
+
+
+
+                <input onkeyup="search(this.value)" type="search" class="form-control mt-4 text-center"
+                    placeholder="Search">
+
+            </div>
+
+            
+
+
+            <div class="col-md-8">
+                <div class="container py-5">
+                    <table class="table">
+                        <thead>
+                            <th>name</th>
+                            <th>age</th>
+                            <th>salary</th>
+                            <th>mobile</th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody id="tBody">
+
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
